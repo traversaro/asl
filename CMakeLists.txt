@@ -464,7 +464,7 @@ if(NOT ASL_SKIP_INSTALL)
   install(FILES ${ASL2_HEADERS} ${ASL2_SOURCE_DIR}/opcode.hd ${ASL2_SOURCE_DIR}/r_opn.hd
                 ${GENERATED_INCLUDE_DIR}/stdio1.h ${GENERATED_INCLUDE_DIR}/arith.h
                 DESTINATION include/asl2  COMPONENT asl)
-  install(TARGETS asl asl2 EXPORT ampl-asl-config DESTINATION lib COMPONENT asl)
+  install(TARGETS asl asl2 EXPORT ampl-asl-config COMPONENT asl)
   if(BUILD_MT_LIBS)
     install(TARGETS asl-mt asl2-mt EXPORT ampl-asl-config DESTINATION lib COMPONENT asl)
   endif()
